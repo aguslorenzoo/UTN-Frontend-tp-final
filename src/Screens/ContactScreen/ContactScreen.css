@@ -1,0 +1,20 @@
+.contact-container{
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container_header{
+    color: var(--font-color);
+    padding: 20px 20px 0 20px;
+}
+
+.contact-container_list{
+    padding: 20px;
+}
+
+.contact_line{
+    border: none;
+    border: 1px solid #202C33;
+    margin-top: 20px;
+} 

@@ -1,0 +1,36 @@
+.message_container{
+    box-sizing: border-box;
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgb(179, 220, 179);
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 10px 0 10px 0;
+}
+
+.message_text{
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.message_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.message_time{
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(31, 30, 30);
+}
+
+.message_button_delete{
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 5px;
+    border-color: rgb(83, 116, 83);
+    background-color: rgb(190, 235, 190);
+}
+

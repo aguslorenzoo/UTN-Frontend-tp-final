@@ -1,0 +1,47 @@
+.contact-info-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--font-color);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.contact-img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info_right{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+}
+
+.contact-info_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-name{
+    font-size: 16px;
+}
+
+.contact_message{
+    font-size: 14px;
+}
+
+.contact_time{
+    font-size: 12px;
+}
+
+.contact_line{
+    border: none;
+    border-top: 2px solid #202C33;
+}
