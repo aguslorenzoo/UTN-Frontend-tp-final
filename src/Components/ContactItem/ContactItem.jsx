@@ -14,7 +14,11 @@ const ContactItem = ({ contact }) => {
                     <span className='contact_time'>{contact.last_message}</span>
                 </div>
                 <div className='contact-info_footer'>
-                    <span className='contact_message'>aca va el ultimo mensaje (averiguar) bla blab lablabalbala....</span>
+                    <span className='contact_message'>
+                        {contact.messages && contact.messages.length > 0
+                        ? contact.messages[contact.messages.length - 1].texto
+                        : "Sin mensajes"}
+                    </span>
                 </div>
                 <hr className='contact_line' />
             </div>

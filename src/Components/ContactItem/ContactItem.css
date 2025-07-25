@@ -5,6 +5,8 @@
     color: var(--font-color);
     text-decoration: none;
     margin-bottom: 10px;
+    width: 100%;  
+    height: 70px;    
 }
 
 .contact-img{
@@ -20,6 +22,8 @@
     display: flex;
     flex-direction: column;
     padding-left: 8px;
+    flex: 1 1 0;     /* Para que ocupe todo el espacio disponible */
+    min-width: 0; 
 }
 
 .contact-info_header{
@@ -27,6 +31,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .contact-name{
@@ -44,4 +49,8 @@
 .contact_line{
     border: none;
     border-top: 2px solid #202C33;
+}
+
+.contact-info_footer{
+    
 }

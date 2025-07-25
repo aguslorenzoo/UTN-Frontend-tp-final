@@ -1,257 +1,355 @@
 const contacts = [
     {
         id: 1,
-        name: 'Pedro',
-        descripcion: 'Solo vives una vez, pero no te olvides de mi',
-        avatar: "/images/caniche.jpeg",
-        last_connection: '15:23',
-        connection_status: 'offline',
-        last_message: "19:20",
+        name: 'Harry Potter',
+        descripcion: 'El niño que vivió',
+        avatar: '/images/harry.jpg',
+        last_connection: '10:05',
+        connection_status: 'online',
+        last_message: "09:45",
         messages: [
             {
-                emisor: "yo",
-                hora: "18:30",
+                emisor: "Harry",
+                hora: "09:15",
                 id: 1,
-                texto: "hola, como estas?",
+                texto: "¡Hola! ¿Ya desayunaste?",
                 status: "visto"
             },
             {
-                emisor: "otro",
-                hora: "19:15",
+                emisor: "Harry",
+                hora: "09:16",
                 id: 2,
-                texto: "hola, bien y vos?",
+                texto: "Ron está buscando sus calcetines otra vez",
                 status: "visto"
             },
             {
                 emisor: "yo",
-                hora: "19:20",
+                hora: "09:30",
                 id: 3,
-                texto: "todo bien",
+                texto: "Jajaja, sí, ya desayuné.",
                 status: "visto"
+            },
+            {
+                emisor: "yo",
+                hora: "09:31",
+                id: 4,
+                texto: "Decile a Ron que revise bajo la cama.",
+                status: "visto"
+            },
+            {
+                emisor: "Harry",
+                hora: "09:45",
+                id: 5,
+                texto: "¡Lo encontró! Nos vemos en la sala común.",
+                status: "no-visto"
             }
         ]
     },
     {
         id: 2,
-        name: 'Juan',
-        descripcion: 'rie ama y sueña',
-        avatar: 'https://nupciasmagazine.com/wp-content/uploads/2024/07/la-pantera-rosa-celebra-60-anos.jpg',
-        last_connection: 'ahora',
+        name: 'Hermione Granger',
+        descripcion: 'La bruja más brillante de su edad',
+        avatar: '/images/hermione.jpg',
+        last_connection: '14:25',
         connection_status: 'online',
-        last_message: "23:30",
+        last_message: "14:22",
         messages: [
             {
-                emisor: "yo",
-                hora: "23:20",
+                emisor: "Hermione",
+                hora: "13:01",
                 id: 1,
-                texto: "HOLAAA",
-                status: "visto"
-            },
-            {
-                emisor: "otro",
-                hora: "23:25",
-                id: 2,
-                texto: "hola, bien y vos?",
+                texto: "¿Terminaste el deber de Pociones?",
                 status: "visto"
             },
             {
                 emisor: "yo",
-                hora: "23:30",
-                id: 3,
-                texto: "todo bien",
+                hora: "13:45",
+                id: 2,
+                texto: "Todavía no, pero me falta poco.",
                 status: "visto"
+            },
+            {
+                emisor: "Hermione",
+                hora: "14:00",
+                id: 3,
+                texto: "Asegúrate de revisar la página 394.",
+                status: "visto"
+            },
+            {
+                emisor: "Hermione",
+                hora: "14:01",
+                id: 4,
+                texto: "Y no olvides citar los ingredientes correctamente.",
+                status: "visto"
+            },
+            {
+                emisor: "yo",
+                hora: "14:10",
+                id: 5,
+                texto: "¡Gracias por el consejo!",
+                status: "visto"
+            },
+            {
+                emisor: "Hermione",
+                hora: "14:22",
+                id: 6,
+                texto: "¡No dudes en preguntarme si necesitas ayuda!",
+                status: "no-visto"
             }
         ]
     },
     {
-        id: 1,
-        name: 'Pedro',
-        descripcion: 'Solo vives una vez, pero no te olvides de mi',
-        avatar: 'https://nupciasmagazine.com/wp-content/uploads/2024/07/la-pantera-rosa-celebra-60-anos.jpg',
-        last_connection: '15:23',
+        id: 3,
+        name: 'Ron Weasley',
+        descripcion: 'Amo los dulces y las bromas',
+        avatar: '/images/ron.jpg',
+        last_connection: '13:00',
         connection_status: 'offline',
-        last_message: "19:20",
+        last_message: "12:55",
         messages: [
             {
-                emisor: "yo",
-                hora: "18:30",
+                emisor: "Ron",
+                hora: "12:30",
                 id: 1,
-                texto: "hola, como estas?",
+                texto: "¿Vamos a jugar ajedrez mágico?",
                 status: "visto"
             },
             {
-                emisor: "otro",
-                hora: "19:15",
+                emisor: "Ron",
+                hora: "12:31",
                 id: 2,
-                texto: "hola, bien y vos?",
+                texto: "Esta vez no vas a ganar.",
                 status: "visto"
             },
             {
                 emisor: "yo",
-                hora: "19:20",
+                hora: "12:45",
                 id: 3,
-                texto: "todo bien",
+                texto: "¡Claro! Pero esta vez te gano.",
                 status: "visto"
+            },
+            {
+                emisor: "yo",
+                hora: "12:46",
+                id: 4,
+                texto: "Ya estoy practicando.",
+                status: "visto"
+            },
+            {
+                emisor: "Ron",
+                hora: "12:55",
+                id: 5,
+                texto: "¡Eso lo veremos!",
+                status: "no-visto"
             }
         ]
     },
     {
-        id: 2,
-        name: 'Juan',
-        descripcion: 'rie ama y sueña',
-        avatar: 'https://nupciasmagazine.com/wp-content/uploads/2024/07/la-pantera-rosa-celebra-60-anos.jpg',
-        last_connection: 'ahora',
-        connection_status: 'online',
-        last_message: "23:30",
-        messages: [
-            {
-                emisor: "yo",
-                hora: "23:20",
-                id: 1,
-                texto: "HOLAAA",
-                status: "visto"
-            },
-            {
-                emisor: "otro",
-                hora: "23:25",
-                id: 2,
-                texto: "hola, bien y vos?",
-                status: "visto"
-            },
-            {
-                emisor: "yo",
-                hora: "23:30",
-                id: 3,
-                texto: "todo bien",
-                status: "visto"
-            }
-        ]
-    },
-    {
-        id: 1,
-        name: 'Pedro',
-        descripcion: 'Solo vives una vez, pero no te olvides de mi',
-        avatar: 'https://nupciasmagazine.com/wp-content/uploads/2024/07/la-pantera-rosa-celebra-60-anos.jpg',
-        last_connection: '15:23',
+        id: 4,
+        name: 'Draco Malfoy',
+        descripcion: 'Mi padre se enterará de esto',
+        avatar: '/images/draco.jpeg',
+        last_connection: '16:15',
         connection_status: 'offline',
-        last_message: "19:20",
+        last_message: "16:03",
         messages: [
             {
-                emisor: "yo",
-                hora: "18:30",
+                emisor: "Draco",
+                hora: "15:50",
                 id: 1,
-                texto: "hola, como estas?",
+                texto: "¿Listo para el partido de Quidditch?",
                 status: "visto"
             },
             {
-                emisor: "otro",
-                hora: "19:15",
+                emisor: "Draco",
+                hora: "15:51",
                 id: 2,
-                texto: "hola, bien y vos?",
+                texto: "No te confíes tanto, Potter.",
                 status: "visto"
             },
             {
                 emisor: "yo",
-                hora: "19:20",
+                hora: "16:00",
                 id: 3,
-                texto: "todo bien",
+                texto: "Obvio, Gryffindor va a ganar.",
                 status: "visto"
+            },
+            {
+                emisor: "Draco",
+                hora: "16:03",
+                id: 4,
+                texto: "Eso está por verse.",
+                status: "no-visto"
             }
         ]
     },
     {
-        id: 2,
-        name: 'Juan',
-        descripcion: 'rie ama y sueña',
-        avatar: 'https://nupciasmagazine.com/wp-content/uploads/2024/07/la-pantera-rosa-celebra-60-anos.jpg',
-        last_connection: 'ahora',
+        id: 5,
+        name: 'Luna Lovegood',
+        descripcion: '¡Cuidado con los Nargles!',
+        avatar: '/images/luna.jpeg',
+        last_connection: '12:00',
         connection_status: 'online',
-        last_message: "23:30",
+        last_message: "11:45",
         messages: [
             {
-                emisor: "yo",
-                hora: "23:20",
+                emisor: "Luna",
+                hora: "11:20",
                 id: 1,
-                texto: "HOLAAA",
-                status: "visto"
-            },
-            {
-                emisor: "otro",
-                hora: "23:25",
-                id: 2,
-                texto: "hola, bien y vos?",
+                texto: "¿Quieres buscar criaturas mágicas conmigo?",
                 status: "visto"
             },
             {
                 emisor: "yo",
-                hora: "23:30",
-                id: 3,
-                texto: "todo bien",
+                hora: "11:35",
+                id: 2,
+                texto: "¡Claro, Luna!",
                 status: "visto"
+            },
+            {
+                emisor: "yo",
+                hora: "11:36",
+                id: 3,
+                texto: "¿Dónde nos encontramos?",
+                status: "visto"
+            },
+            {
+                emisor: "Luna",
+                hora: "11:45",
+                id: 4,
+                texto: "En el Bosque Prohibido. No olvides tus Spectrespecs.",
+                status: "no-visto"
             }
         ]
     },
     {
-        id: 1,
-        name: 'Pedro',
-        descripcion: 'Solo vives una vez, pero no te olvides de mi',
-        avatar: 'https://nupciasmagazine.com/wp-content/uploads/2024/07/la-pantera-rosa-celebra-60-anos.jpg',
-        last_connection: '15:23',
+        id: 6,
+        name: 'Severus Snape',
+        descripcion: 'Profesor de Pociones',
+        avatar: '/images/snape.webp',
+        last_connection: '19:10',
         connection_status: 'offline',
-        last_message: "19:20",
+        last_message: "19:03",
         messages: [
             {
-                emisor: "yo",
-                hora: "18:30",
+                emisor: "Snape",
+                hora: "18:50",
                 id: 1,
-                texto: "hola, como estas?",
+                texto: "No olvides entregar tu tarea de Pociones.",
                 status: "visto"
             },
             {
-                emisor: "otro",
-                hora: "19:15",
+                emisor: "Snape",
+                hora: "18:51",
                 id: 2,
-                texto: "hola, bien y vos?",
+                texto: "Espero que no tenga errores.",
                 status: "visto"
             },
             {
                 emisor: "yo",
-                hora: "19:20",
+                hora: "19:00",
                 id: 3,
-                texto: "todo bien",
+                texto: "La entregaré a tiempo, profesor.",
                 status: "visto"
+            },
+            {
+                emisor: "yo",
+                hora: "19:01",
+                id: 4,
+                texto: "Revisé todo dos veces.",
+                status: "visto"
+            },
+            {
+                emisor: "Snape",
+                hora: "19:03",
+                id: 5,
+                texto: "Más te vale.",
+                status: "no-visto"
             }
         ]
     },
     {
-        id: 2,
-        name: 'Juan',
-        descripcion: 'rie ama y sueña',
-        avatar: 'https://nupciasmagazine.com/wp-content/uploads/2024/07/la-pantera-rosa-celebra-60-anos.jpg',
-        last_connection: 'ahora',
+        id: 7,
+        name: 'Minerva McGonagall',
+        descripcion: 'Directora de Gryffindor',
+        avatar: '/images/mcgonagall.jpg',
+        last_connection: '08:30',
         connection_status: 'online',
-        last_message: "23:30",
+        last_message: "08:10",
         messages: [
             {
-                emisor: "yo",
-                hora: "23:20",
+                emisor: "McGonagall",
+                hora: "07:50",
                 id: 1,
-                texto: "HOLAAA",
-                status: "visto"
-            },
-            {
-                emisor: "otro",
-                hora: "23:25",
-                id: 2,
-                texto: "hola, bien y vos?",
+                texto: "La puntualidad es importante.",
                 status: "visto"
             },
             {
                 emisor: "yo",
-                hora: "23:30",
-                id: 3,
-                texto: "todo bien",
+                hora: "08:05",
+                id: 2,
+                texto: "¡Sí profesora, ya voy!",
                 status: "visto"
+            },
+            {
+                emisor: "yo",
+                hora: "08:06",
+                id: 3,
+                texto: "Solo estoy terminando un trabajo.",
+                status: "visto"
+            },
+            {
+                emisor: "McGonagall",
+                hora: "08:10",
+                id: 4,
+                texto: "Te espero en mi despacho.",
+                status: "no-visto"
+            }
+        ]
+    },
+    {
+        id: 8,
+        name: 'Sirius Black',
+        descripcion: 'Tu padrino favorito',
+        avatar: '/images/sirius.jpg',
+        last_connection: '23:00',
+        connection_status: 'offline',
+        last_message: "22:20",
+        messages: [
+            {
+                emisor: "Sirius",
+                hora: "21:45",
+                id: 1,
+                texto: "¿Listo para una aventura nocturna?",
+                status: "visto"
+            },
+            {
+                emisor: "Sirius",
+                hora: "22:00",
+                id: 2,
+                texto: "Trae el mapa del merodeador.",
+                status: "visto"
+            },
+            {
+                emisor: "yo",
+                hora: "22:10",
+                id: 3,
+                texto: "¡Cuenta conmigo!",
+                status: "visto"
+            },
+            {
+                emisor: "yo",
+                hora: "22:11",
+                id: 4,
+                texto: "¿Llevo también la capa invisible?",
+                status: "visto"
+            },
+            {
+                emisor: "Sirius",
+                hora: "22:20",
+                id: 5,
+                texto: "Por supuesto, nunca se sabe quién puede estar mirando.",
+                status: "no-visto"
             }
         ]
     }
