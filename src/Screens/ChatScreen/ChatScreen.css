@@ -1,0 +1,22 @@
+.chat-header{
+    background-color: var(--background-color);
+    color: var(--font-color);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+.chat-header-avatar{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+

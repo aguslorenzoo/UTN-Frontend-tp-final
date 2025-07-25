@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Routes, Route, useParams } from "react-router";
 import ContactScreen from "./Screens/ContactScreen/ContactScreen";
@@ -7,13 +6,15 @@ import "./App.css";
 
 /* 
 INVESTIGAR
-  propiedad date para el horario de los mensajes
-  agregar la navbar con info de contacto
-  darle estilos a todo
-  darle estilo a la barra para bajar de los contacto 
-  personalizar bien los contactos, mensajes y fotos 
-  investigar como poner mejor la foto de fondo de chat (esta muy ampliada)
-  en el App mejorar las clases porque no entiendo nada con esos nombres
+- imagenes
+- enrutamiento de chat a chat sin volver para atras
+- agregar la navbar con info de contacto
+- darle estilos a todo
+- darle estilo a la barra para bajar de los contacto 
+- personalizar bien los contactos, mensajes y fotos 
+- investigar como poner mejor la foto de fondo de chat (esta muy ampliada)
+- en el App mejorar las clases porque no entiendo nada con esos nombres
+- hacer el responsive
 */
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
             <div className="chat-layout">
               <div className="contact-list-container">
                 <ContactScreen />
-              </div>
+              </div>  
               <div className="chat-container">
                 <ChatScreen />
               </div>
