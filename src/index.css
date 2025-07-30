@@ -9,7 +9,9 @@
 }
 
 :root{
-    --background-color: #131B23;
+    --background-color: #111B22;
+    --background-color-400: #202C33;
+    --background-color-300: #2A3942;
     --principal-color-500: #2E6D5E;
     --font-color: #EAEAEA;
 }

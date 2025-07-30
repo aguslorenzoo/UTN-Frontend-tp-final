@@ -1,18 +1,28 @@
+.chatscreen_container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 .chat-header{
     background-color: var(--background-color);
     color: var(--font-color);
-    height: 60px;
+    height: 80px;
     display: flex;
     align-items: center;
     padding: 10px;
     font-weight: 700;
     font-size: 16px;
+}
 
+.MessageList {
+    flex: 1; 
+    overflow-y: auto;
 }
 
 .chat-header-avatar{
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
     object-fit: cover;
     border-radius: 100px;
     display: flex;
@@ -20,3 +30,51 @@
     margin-right: 10px;
 }
 
+.chat{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    background-image: url("/images/Fondo_whatsapp.jpeg");
+} 
+.chat > *:first-child {
+    padding: 12px;
+}
+
+.chat_form{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+.input{
+    padding: 10px;
+    width: 95%;
+    border-radius: 20px;
+    background-color: var(--background-color-300);
+    font-size: 16px;
+    border: none;
+    color: var(--font-color);
+}
+
+.input-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: var(--background-color-300);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-icon{
+    font-size: 25px;
+    color: rgb(174, 173, 173);
+    padding: 2px;
+}

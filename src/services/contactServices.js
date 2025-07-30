@@ -9,14 +9,14 @@ const contacts = [
         last_message: "09:45",
         messages: [
             {
-                emisor: "Harry",
+                emisor: "otro",
                 hora: "09:15",
                 id: 1,
                 texto: "¡Hola! ¿Ya desayunaste?",
                 status: "visto"
             },
             {
-                emisor: "Harry",
+                emisor: "otro",
                 hora: "09:16",
                 id: 2,
                 texto: "Ron está buscando sus calcetines otra vez",
@@ -37,7 +37,7 @@ const contacts = [
                 status: "visto"
             },
             {
-                emisor: "Harry",
+                emisor: "otro",
                 hora: "09:45",
                 id: 5,
                 texto: "¡Lo encontró! Nos vemos en la sala común.",
@@ -55,7 +55,7 @@ const contacts = [
         last_message: "14:22",
         messages: [
             {
-                emisor: "Hermione",
+                emisor: "otro",
                 hora: "13:01",
                 id: 1,
                 texto: "¿Terminaste el deber de Pociones?",
@@ -69,14 +69,14 @@ const contacts = [
                 status: "visto"
             },
             {
-                emisor: "Hermione",
+                emisor: "otro",
                 hora: "14:00",
                 id: 3,
                 texto: "Asegúrate de revisar la página 394.",
                 status: "visto"
             },
             {
-                emisor: "Hermione",
+                emisor: "otro",
                 hora: "14:01",
                 id: 4,
                 texto: "Y no olvides citar los ingredientes correctamente.",
@@ -90,7 +90,7 @@ const contacts = [
                 status: "visto"
             },
             {
-                emisor: "Hermione",
+                emisor: "otro",
                 hora: "14:22",
                 id: 6,
                 texto: "¡No dudes en preguntarme si necesitas ayuda!",
@@ -108,14 +108,14 @@ const contacts = [
         last_message: "12:55",
         messages: [
             {
-                emisor: "Ron",
+                emisor: "otro",
                 hora: "12:30",
                 id: 1,
                 texto: "¿Vamos a jugar ajedrez mágico?",
                 status: "visto"
             },
             {
-                emisor: "Ron",
+                emisor: "otro",
                 hora: "12:31",
                 id: 2,
                 texto: "Esta vez no vas a ganar.",
@@ -136,7 +136,7 @@ const contacts = [
                 status: "visto"
             },
             {
-                emisor: "Ron",
+                emisor: "otro",
                 hora: "12:55",
                 id: 5,
                 texto: "¡Eso lo veremos!",
@@ -154,14 +154,14 @@ const contacts = [
         last_message: "16:03",
         messages: [
             {
-                emisor: "Draco",
+                emisor: "otro",
                 hora: "15:50",
                 id: 1,
                 texto: "¿Listo para el partido de Quidditch?",
                 status: "visto"
             },
             {
-                emisor: "Draco",
+                emisor: "otro",
                 hora: "15:51",
                 id: 2,
                 texto: "No te confíes tanto, Potter.",
@@ -175,7 +175,7 @@ const contacts = [
                 status: "visto"
             },
             {
-                emisor: "Draco",
+                emisor: "otro",
                 hora: "16:03",
                 id: 4,
                 texto: "Eso está por verse.",
@@ -193,7 +193,7 @@ const contacts = [
         last_message: "11:45",
         messages: [
             {
-                emisor: "Luna",
+                emisor: "otro",
                 hora: "11:20",
                 id: 1,
                 texto: "¿Quieres buscar criaturas mágicas conmigo?",
@@ -214,7 +214,7 @@ const contacts = [
                 status: "visto"
             },
             {
-                emisor: "Luna",
+                emisor: "otro",
                 hora: "11:45",
                 id: 4,
                 texto: "En el Bosque Prohibido. No olvides tus Spectrespecs.",
@@ -232,14 +232,14 @@ const contacts = [
         last_message: "19:03",
         messages: [
             {
-                emisor: "Snape",
+                emisor: "otro",
                 hora: "18:50",
                 id: 1,
                 texto: "No olvides entregar tu tarea de Pociones.",
                 status: "visto"
             },
             {
-                emisor: "Snape",
+                emisor: "otro",
                 hora: "18:51",
                 id: 2,
                 texto: "Espero que no tenga errores.",
@@ -260,7 +260,7 @@ const contacts = [
                 status: "visto"
             },
             {
-                emisor: "Snape",
+                emisor: "otro",
                 hora: "19:03",
                 id: 5,
                 texto: "Más te vale.",
@@ -278,7 +278,7 @@ const contacts = [
         last_message: "08:10",
         messages: [
             {
-                emisor: "McGonagall",
+                emisor: "otro",
                 hora: "07:50",
                 id: 1,
                 texto: "La puntualidad es importante.",
@@ -299,7 +299,7 @@ const contacts = [
                 status: "visto"
             },
             {
-                emisor: "McGonagall",
+                emisor: "otro",
                 hora: "08:10",
                 id: 4,
                 texto: "Te espero en mi despacho.",
@@ -317,14 +317,14 @@ const contacts = [
         last_message: "22:20",
         messages: [
             {
-                emisor: "Sirius",
+                emisor: "otro",
                 hora: "21:45",
                 id: 1,
                 texto: "¿Listo para una aventura nocturna?",
                 status: "visto"
             },
             {
-                emisor: "Sirius",
+                emisor: "otro",
                 hora: "22:00",
                 id: 2,
                 texto: "Trae el mapa del merodeador.",
@@ -345,7 +345,7 @@ const contacts = [
                 status: "visto"
             },
             {
-                emisor: "Sirius",
+                emisor: "otro",
                 hora: "22:20",
                 id: 5,
                 texto: "Por supuesto, nunca se sabe quién puede estar mirando.",

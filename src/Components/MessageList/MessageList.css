@@ -1,0 +1,4 @@
+.message-list-container{
+    flex: 1;
+    overflow-y: auto;
+}

@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 import Message from "../Message/Message"
+import "./MessageList.css"
 
 const MessageList = ({messages, deleteMessageByID}) => {
     if (messages.length === 0){
@@ -21,7 +22,7 @@ const MessageList = ({messages, deleteMessageByID}) => {
         }
     )
     return(
-        <div>
+        <div className="message-list-container">
             {message_list}
         </div>
     )

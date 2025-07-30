@@ -1,23 +1,25 @@
-import React from "react";
-import { Routes, Route, useParams } from "react-router";
+import React, {useState} from "react";
+import { Routes, Route, useParams, useNavigate } from "react-router";
 import ContactScreen from "./Screens/ContactScreen/ContactScreen";
 import ChatScreen from "./Screens/ChatScreen/ChatScreen";
 import "./App.css";
 
 /* 
 INVESTIGAR
-- imagenes
-- enrutamiento de chat a chat sin volver para atras
 - agregar la navbar con info de contacto
-- darle estilos a todo
 - darle estilo a la barra para bajar de los contacto 
-- personalizar bien los contactos, mensajes y fotos 
-- investigar como poner mejor la foto de fondo de chat (esta muy ampliada)
-- en el App mejorar las clases porque no entiendo nada con esos nombres
 - hacer el responsive
 */
 
 function App() {
+  const navigate = useNavigate();
+  const [selectedContactId, setSelectedContactId] = useState(null);
+
+  const handleContactSelect = (contactId) => {
+    setSelectedContactId(contactId);
+    navigate(`/contact/${contactId}/messages`)
+  }
+
   return (
     <div className="whatsapp-container">
       <Routes>
@@ -26,10 +28,10 @@ function App() {
           element={
             <div className="chat-layout">
               <div className="contact-list-container">
-                <ContactScreen />
+                <ContactScreen onContactSelect={handleContactSelect} />
               </div>  
               <div className="chat-container">
-                <ChatScreen />
+                <ChatScreen contactId={selectedContactId} />
               </div>
             </div>
           }
@@ -39,7 +41,7 @@ function App() {
           element={
             <div className="chat-layout">
               <div className="contact-list-container">
-                <ContactScreen />
+                <ContactScreen onContactSelect={handleContactSelect} />
               </div>
               <div className="chat-placeholder">
                 <h2>Selecciona un chat para comenzar</h2>
