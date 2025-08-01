@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import MessageList from "../../Components/MessageList/MessageList";
-import { useParams } from "react-router";
+import { useParams, useNavigate } from "react-router";
 import { getContactById } from "../../services/contactServices"; 
 import "./ChatScreen.css"
 import { IoSendSharp } from "react-icons/io5"
@@ -11,11 +11,12 @@ const ChatScreen = () =>{
 
     const {contact_id} = useParams()
     const contact_selected = getContactById(contact_id)
-    const [messages, setMessages] = useState([]);
+    const [messages, setMessages] = useState([])
+    const navigate = useNavigate()
     
     useEffect(() => {
-        setMessages(contact_selected?.messages || []);
-    }, [contact_id]);   
+        setMessages(contact_selected?.messages || [])
+    }, [contact_id])  
 
     const deleteMessageByID = (message_id) => {
         const new_message_list = []
@@ -54,7 +55,7 @@ const ChatScreen = () =>{
     }
     return (
         <div className="chatscreen_container">
-            <div className="chat-header">
+            <div className="chat-header" onClick={() => navigate(`/contact/${contact_id}/info`)}>
                 <img src={contact_selected.avatar} className="chat-header-avatar"/>
                 {contact_selected.name}
             </div>

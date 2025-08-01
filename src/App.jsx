@@ -3,6 +3,7 @@ import { Routes, Route, useParams, useNavigate } from "react-router";
 import ContactScreen from "./Screens/ContactScreen/ContactScreen";
 import ChatScreen from "./Screens/ChatScreen/ChatScreen";
 import "./App.css";
+import InfoContactScreen from "./Screens/NavbarScreen/InfoContactScreen";
 
 /* 
 INVESTIGAR
@@ -16,7 +17,7 @@ function App() {
   const [selectedContactId, setSelectedContactId] = useState(null);
 
   const handleContactSelect = (contactId) => {
-    setSelectedContactId(contactId);
+    setSelectedContactId(contactId)
     navigate(`/contact/${contactId}/messages`)
   }
 
@@ -37,6 +38,19 @@ function App() {
           }
         />
         <Route
+          path="/contact/:contact_id/info"
+          element={
+            <div className="chat-layout">
+              <div className="contact-list-container">
+                <ContactScreen onContactSelect={handleContactSelect} />
+              </div>  
+              <div className="info-layout">
+                <InfoContactScreen contactId={selectedContactId} />
+              </div>
+            </div>
+          }
+        />
+        <Route
           path="/"
           element={
             <div className="chat-layout">
@@ -51,7 +65,7 @@ function App() {
         />
       </Routes>
     </div>
-  );
+  )
 }
 
 export default App;

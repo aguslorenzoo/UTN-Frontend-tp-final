@@ -7,6 +7,7 @@ const contacts = [
         last_connection: '10:05',
         connection_status: 'online',
         last_message: "09:45",
+        phone: "+54 11 2345-6789",
         messages: [
             {
                 emisor: "otro",
@@ -53,6 +54,7 @@ const contacts = [
         last_connection: '14:25',
         connection_status: 'online',
         last_message: "14:22",
+        phone: "+54 11 4567-1234",
         messages: [
             {
                 emisor: "otro",
@@ -106,6 +108,7 @@ const contacts = [
         last_connection: '13:00',
         connection_status: 'offline',
         last_message: "12:55",
+        phone: "+54 11 6789-4321",
         messages: [
             {
                 emisor: "otro",
@@ -152,6 +155,7 @@ const contacts = [
         last_connection: '16:15',
         connection_status: 'offline',
         last_message: "16:03",
+        phone: "+54 11 3456-9876",
         messages: [
             {
                 emisor: "otro",
@@ -164,7 +168,7 @@ const contacts = [
                 emisor: "otro",
                 hora: "15:51",
                 id: 2,
-                texto: "No te confíes tanto, Potter.",
+                texto: "No te confíes tanto.",
                 status: "visto"
             },
             {
@@ -191,6 +195,7 @@ const contacts = [
         last_connection: '12:00',
         connection_status: 'online',
         last_message: "11:45",
+        phone: "+54 11 7890-1234",
         messages: [
             {
                 emisor: "otro",
@@ -230,6 +235,7 @@ const contacts = [
         last_connection: '19:10',
         connection_status: 'offline',
         last_message: "19:03",
+        phone: "+54 11 1234-5678",
         messages: [
             {
                 emisor: "otro",
@@ -276,6 +282,7 @@ const contacts = [
         last_connection: '08:30',
         connection_status: 'online',
         last_message: "08:10",
+        phone: "+54 11 9123-4567",
         messages: [
             {
                 emisor: "otro",
@@ -315,6 +322,7 @@ const contacts = [
         last_connection: '23:00',
         connection_status: 'offline',
         last_message: "22:20",
+        phone: "+54 11 8345-6789",
         messages: [
             {
                 emisor: "otro",
@@ -352,7 +360,64 @@ const contacts = [
                 status: "no-visto"
             }
         ]
-    }
+    },
+    {
+        id: 12,
+        name: 'Albus Dumbledore',
+        descripcion: 'Director de Hogwarts',
+        avatar: '/images/dumbledore.jpg',
+        last_connection: '22:15',
+        connection_status: 'online',
+        last_message: "22:10",
+        phone: "+54 11 7512-3345",
+        messages: [
+            { emisor: "otro", hora: "20:00", id: 1, texto: "La felicidad puede hallarse hasta en los más oscuros momentos.", status: "visto" },
+            { emisor: "yo", hora: "20:05", id: 2, texto: "Siempre que uno recuerde encender la luz, ¿verdad?", status: "visto" },
+            { emisor: "otro", hora: "20:10", id: 3, texto: "Exactamente. Tienes buena memoria.", status: "visto" },
+            { emisor: "yo", hora: "21:00", id: 4, texto: "¿Qué hacemos con la profecía?", status: "visto" },
+            { emisor: "otro", hora: "21:15", id: 5, texto: "Debemos mantenerla segura. Voldemort la busca.", status: "visto" },
+            { emisor: "yo", hora: "21:30", id: 6, texto: "Estoy listo para lo que venga.", status: "visto" },
+            { emisor: "otro", hora: "22:10", id: 7, texto: "Y yo estaré contigo hasta el final.", status: "no-visto" }
+        ]
+    },
+    {
+        id: 13,
+        name: 'Rubeus Hagrid',
+        descripcion: 'Guardián de las Llaves y los Terrenos',
+        avatar: '/images/hagrid.jpg',
+        last_connection: '18:45',
+        connection_status: 'offline',
+        last_message: "18:40",
+        phone: "+54 11 7624-8890",
+        messages: [
+            { emisor: "otro", hora: "16:10", id: 1, texto: "¡Cuidé a un dragón otra vez!", status: "visto" },
+            { emisor: "yo", hora: "16:12", id: 2, texto: "¿Hagrid, otra vez con eso?", status: "visto" },
+            { emisor: "otro", hora: "16:20", id: 3, texto: "Era un chiquitito, no haría daño a nadie...", status: "visto" },
+            { emisor: "yo", hora: "17:00", id: 4, texto: "¿Y cómo está Buckbeak?", status: "visto" },
+            { emisor: "otro", hora: "17:05", id: 5, texto: "Volando feliz por los cielos, como siempre.", status: "visto" },
+            { emisor: "yo", hora: "18:00", id: 6, texto: "Sos un alma noble, Hagrid.", status: "visto" },
+            { emisor: "otro", hora: "18:40", id: 7, texto: "Gracias. Siempre podés contar conmigo, amigo.", status: "no-visto" }
+        ]
+    },
+    {
+        id: 14,
+        name: 'Lord Voldemort',
+        descripcion: 'El que no debe ser nombrado',
+        avatar: '/images/voldemort.jpg',
+        last_connection: '03:00',
+        connection_status: 'online',
+        last_message: "02:55",
+        phone: "+54 11 7111-6666",
+        messages: [
+            { emisor: "otro", hora: "01:00", id: 1, texto: "¿Estás listo para servir al Señor Tenebroso?", status: "visto" },
+            { emisor: "yo", hora: "01:10", id: 2, texto: "Siempre, mi Lord.", status: "visto" },
+            { emisor: "otro", hora: "01:30", id: 3, texto: "Hay traidores en nuestras filas. Ocúpate de ellos.", status: "visto" },
+            { emisor: "yo", hora: "01:45", id: 4, texto: "¿Quiénes son?", status: "visto" },
+            { emisor: "otro", hora: "02:00", id: 5, texto: "Snape duda. Bella está inquieta.", status: "visto" },
+            { emisor: "yo", hora: "02:30", id: 6, texto: "Lo vigilaré de cerca.", status: "visto" },
+            { emisor: "otro", hora: "02:55", id: 7, texto: "No falles. Yo no perdono errores.", status: "no-visto" }
+        ]
+    }    
 ]
 
 export const getContactList = () => {
