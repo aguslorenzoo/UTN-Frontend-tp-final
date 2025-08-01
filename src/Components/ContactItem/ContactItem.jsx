@@ -20,7 +20,7 @@ const ContactItem = ({ contact }) => {
                         : "Sin mensajes"}
                     </span>
                 </div>
-                <hr className='contact_line' />
+                <div className='contact_line'></div>
             </div>
         </Link>
     )

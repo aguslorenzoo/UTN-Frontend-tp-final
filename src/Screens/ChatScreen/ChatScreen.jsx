@@ -4,6 +4,8 @@ import { useParams, useNavigate } from "react-router";
 import { getContactById } from "../../services/contactServices"; 
 import "./ChatScreen.css"
 import { IoSendSharp } from "react-icons/io5"
+import { SlOptionsVertical } from "react-icons/sl";
+
 
 
 
@@ -57,7 +59,11 @@ const ChatScreen = () =>{
         <div className="chatscreen_container">
             <div className="chat-header" onClick={() => navigate(`/contact/${contact_id}/info`)}>
                 <img src={contact_selected.avatar} className="chat-header-avatar"/>
-                {contact_selected.name}
+                <div className="contact-header">
+                    {contact_selected.name}
+                    <p>Haz clic para ver la informacion de contacto</p>
+                </div>
+                <SlOptionsVertical className="option-icon"/>
             </div>
             <div className="chat">
                 <MessageList messages={messages} deleteMessageByID={deleteMessageByID}/>

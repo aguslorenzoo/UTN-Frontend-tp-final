@@ -2,6 +2,7 @@
     height: 100vh;
     width: 100vw;
     display: flex;
+    background-color: var(--background-color);
 }
 
 .chat-layout {
@@ -15,6 +16,7 @@
     height: 100%;
     overflow-y: auto;
     background-color: var(--background-color);
+    border-right: 0.5px solid var(--background-color-300);
 }
 
 .chat-container, .chat-placeholder {
@@ -48,4 +50,75 @@
 .info-layout{
     display: flex;
     width: 70%;
+}
+
+@media screen and (max-width: 1350px) {
+    .contact-list-container{
+        width: 450px;
+    }
+    .chat-container{
+        width: 70%;
+    }
+    .info-layout{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .contact-list-container{
+        width: 450px;
+    }
+    .chat-container{
+        width: 70%;
+    }
+    .info-layout{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contact-list-container{
+        width: 40%;
+    }
+    .chat-container{
+        width: 60%;
+    }
+    .info-layout{
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .contact-list-container{
+        width: 50%;
+    }
+    .info-layout{
+        width: 50%;
+    }
+}
+
+@media (max-width: 750px) {
+    .mobile-hidden {
+        display: none !important;
+    }
+    
+    .desktop-only {
+        display: none !important;
+    }
+    
+    .contact-list-container {
+        width: 100% !important;
+        min-width: unset;
+    }
+    
+    .chat-container, .info-layout {
+        width: 100% !important;
+    }
+    
+    /* Asegura que el scroll funcione correctamente */
+    .whatsapp-container {
+        overflow: hidden;
+        height: 100vh;
+    }
 }

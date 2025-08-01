@@ -10,7 +10,7 @@ const ContactScreen = () => {
         <div className="contact-container">
             <div className="contact-container_header">
                 <h1>Chats</h1>
-                <hr className="contact_line"/>
+                <div className="contact_line"></div>
             </div>
             <div className="contact-container_list">
                 <ContactList contacts={contactState} />
