@@ -16,6 +16,19 @@
     cursor: pointer;
 }
 
+.back-button{
+    font-size: 40px;
+    border: none;
+    color: #AEADAD;
+    background-color: var(--background-color-400);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    max-width: 40px;
+    max-height: 40px;
+    margin: 5px;
+}
+
 .contact-header p{
     font-size: 14px;
     font-weight: 300;
@@ -91,4 +104,88 @@
     font-size: 25px;
     color: rgb(174, 173, 173);
     padding: 2px;
+}
+
+
+
+@media screen and (min-width: 1500px){
+    .contact-header{
+        font-size: 22px;
+    }
+    .contact-header p{
+        font-size: 18px;
+    }
+    .chat_form{
+        padding: 20px;
+    }
+    .input{
+        font-size: 20px;
+    }
+    .input-button{
+        height: 48px;
+        width: 48px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .back-button{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 445px){
+    .chat-header-avatar{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+    .contact-header{
+        font-size: 15px;
+    }
+    .contact-header p{
+        font-size: 13px;
+    }
+    .chat_form{
+        padding: 10px;
+    }
+    .input{
+        font-size: 14px;
+    }
+    .input-button{
+        height: 40px;
+        width: 40px;
+    }
+    .chat{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .chat-header-avatar{
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+    }
+    .contact-header{
+        font-size: 14px;
+    }
+    .contact-header p{
+        font-size: 12px;
+    }
+    .chat_form{
+        padding: 10px;
+    }
+    .input{
+        font-size: 12px;
+    }
+    .input-button{
+        height: 35px;
+        width: 35px;
+    }
+    .chat{
+        font-size: 10px;
+    }
+    .button-icon{
+        font-size: 30px;
+    }
 }

@@ -52,49 +52,68 @@
     width: 70%;
 }
 
+@media screen and (max-width: 2000px){
+    
+}
+
 @media screen and (max-width: 1350px) {
     .contact-list-container{
         width: 450px;
+        height: 100vh;
     }
     .chat-container{
         width: 70%;
+        height: 100vh;
     }
     .info-layout{
-        width: 60%;
+        width: 70%;
+        height: 100vh;
     }
 }
 
 @media screen and (max-width: 1150px) {
     .contact-list-container{
         width: 450px;
+        height: 100vh;
     }
     .chat-container{
         width: 70%;
+        height: 100vh;
     }
     .info-layout{
-        width: 60%;
+        width: 64%;
+        height: 100vh;
     }
 }
 
 @media screen and (max-width: 1000px) {
     .contact-list-container{
-        width: 40%;
+        width: 400px;
+        height: 100vh;
     }
     .chat-container{
         width: 60%;
+        height: 100vh;
     }
     .info-layout{
         width: 60%;
+        height: 100vh;
     }
 }
 
 
 @media screen and (max-width: 800px) {
     .contact-list-container{
-        width: 50%;
+        width: 350px;
+        height: 100vh;
+    }
+    .chat-container{
+        width: 60%;
+        height: 100vh;
     }
     .info-layout{
-        width: 50%;
+        width: 54%;
+        height: 100vh;
     }
 }
 

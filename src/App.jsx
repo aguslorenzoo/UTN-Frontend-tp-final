@@ -3,7 +3,7 @@ import { Routes, Route, useParams, useNavigate } from "react-router";
 import ContactScreen from "./Screens/ContactScreen/ContactScreen";
 import ChatScreen from "./Screens/ChatScreen/ChatScreen";
 import "./App.css";
-import InfoContactScreen from "./Screens/NavbarScreen/InfoContactScreen";
+import InfoContactScreen from "./Screens/InfoContactScreen/InfoContactScreen";
 
 function App() {
   const navigate = useNavigate();

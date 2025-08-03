@@ -1,3 +1,8 @@
+.contact-container{
+    padding: 0;
+    margin: 0;
+}
+
 .contact-info-container{
     display: flex;
     flex-direction: row;
@@ -5,10 +10,14 @@
     justify-content: center;
     color: var(--font-color);
     text-decoration: none;
-    margin: 5px;
-    max-height: 80px;
     min-height: 80px;
-    width: 100%;  
+    width: 100%;
+    padding: 0 7.5px 0 7.5px;
+}
+
+.contact-info-container:hover{
+    background-color: var(--background-color-400);
+    width: 100%;
 }
 
 .contact-img{
@@ -51,4 +60,22 @@
 .contact_line{
     border: none;
     border-top: 2px solid #202C33;
+    margin-top: 0;
+}
+
+
+@media screen and (min-width: 1500px){
+    .contact-img{
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+    .contact-info-container{
+        min-height: 90px;
+    }
+    .contact-name{
+        font-size: 18px;
+    }
+    
 }

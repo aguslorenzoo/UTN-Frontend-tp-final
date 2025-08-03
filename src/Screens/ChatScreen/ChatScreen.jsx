@@ -4,7 +4,8 @@ import { useParams, useNavigate } from "react-router";
 import { getContactById } from "../../services/contactServices"; 
 import "./ChatScreen.css"
 import { IoSendSharp } from "react-icons/io5"
-import { SlOptionsVertical } from "react-icons/sl";
+import { SlOptionsVertical } from "react-icons/sl"
+import { IoIosArrowBack } from "react-icons/io";
 
 
 
@@ -19,17 +20,6 @@ const ChatScreen = () =>{
     useEffect(() => {
         setMessages(contact_selected?.messages || [])
     }, [contact_id])  
-
-    const deleteMessageByID = (message_id) => {
-        const new_message_list = []
-        
-        for (const message of messages){
-            if (message.id !== message_id){ 
-                new_message_list.push(message)
-            }
-        }
-        setMessages(new_message_list)
-    }
 
     const addNewMessage = (text) => {
         const now = new Date();
@@ -57,16 +47,17 @@ const ChatScreen = () =>{
     }
     return (
         <div className="chatscreen_container">
-            <div className="chat-header" onClick={() => navigate(`/contact/${contact_id}/info`)}>
-                <img src={contact_selected.avatar} className="chat-header-avatar"/>
-                <div className="contact-header">
+            <div className="chat-header">
+                <button className='back-button' onClick={() => navigate(`/`)}><IoIosArrowBack /></button>
+                <img onClick={() => navigate(`/contact/${contact_id}/info`)} src={contact_selected.avatar} className="chat-header-avatar"/>
+                <div className="contact-header" onClick={() => navigate(`/contact/${contact_id}/info`)}>
                     {contact_selected.name}
                     <p>Haz clic para ver la informacion de contacto</p>
                 </div>
                 <SlOptionsVertical className="option-icon"/>
             </div>
             <div className="chat">
-                <MessageList messages={messages} deleteMessageByID={deleteMessageByID}/>
+                <MessageList messages={messages}/>
                 <form onSubmit={handleSumbitSentMessageForm}>
                     <div className="chat_form">
                         <label htmlFor="message"></label>

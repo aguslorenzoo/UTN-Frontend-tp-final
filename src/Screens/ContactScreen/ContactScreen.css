@@ -9,12 +9,15 @@
     padding: 20px 20px 0 20px;
 }
 
-.contact-container_list{
-    padding: 20px;
-}
 
 .contact_line{
     border: none;
     border: 1px solid #202C33;
     margin-top: 20px;
 } 
+
+@media screen and (min-width: 1500px){
+    .contact-container_header h1{
+        font-size: 45px;
+    }
+}

@@ -53,3 +53,26 @@
     background-color: rgb(190, 235, 190);
 }
 
+@media screen and (min-width: 1500px){
+    .message_text{
+        font-size: 18px;
+    }
+    .message_time{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 445px){
+    .message_text{
+        font-size: 13px;
+    }
+    .message_time{
+        font-size: 9px;
+    }
+    .message_sent{
+        width: 200px;
+    }
+    .message_received{
+        width: 200px;
+    }
+}
