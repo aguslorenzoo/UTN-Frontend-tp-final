@@ -9,41 +9,21 @@ const contacts = [
         last_message: "09:45",
         phone: "+54 11 2345-6789",
         messages: [
-            {
-                emisor: "otro",
-                hora: "09:15",
-                id: 1,
-                texto: "¡Hola! ¿Ya desayunaste?",
-                status: "visto"
-            },
-            {
-                emisor: "otro",
-                hora: "09:16",
-                id: 2,
-                texto: "Ron está buscando sus calcetines otra vez",
-                status: "visto"
-            },
-            {
-                emisor: "yo",
-                hora: "09:30",
-                id: 3,
-                texto: "Jajaja, sí, ya desayuné.",
-                status: "visto"
-            },
-            {
-                emisor: "yo",
-                hora: "09:31",
-                id: 4,
-                texto: "Decile a Ron que revise bajo la cama.",
-                status: "visto"
-            },
-            {
-                emisor: "otro",
-                hora: "09:45",
-                id: 5,
-                texto: "¡Lo encontró! Nos vemos en la sala común.",
-                status: "no-visto"
-            }
+            { emisor: "otro", hora: "08:15", id: 1, texto: "¡Hola! ¿Ya desayunaste?", status: "visto" },
+            { emisor: "otro", hora: "08:16", id: 2, texto: "Ron está buscando sus calcetines otra vez", status: "visto" },
+            { emisor: "yo", hora: "08:30", id: 3, texto: "Jajaja, sí, ya desayuné.", status: "visto" },
+            { emisor: "yo", hora: "08:31", id: 4, texto: "Decile a Ron que revise bajo la cama.", status: "visto" },
+            { emisor: "otro", hora: "08:45", id: 5, texto: "¡Lo encontró! Nos vemos en la sala común.", status: "visto" },
+            { emisor: "yo", hora: "08:50", id: 6, texto: "¿Trajiste el Mapa del Merodeador?", status: "visto" },
+            { emisor: "otro", hora: "08:52", id: 7, texto: "Sí, lo tengo en la mochila.", status: "visto" },
+            { emisor: "yo", hora: "08:55", id: 8, texto: "Genial. Lo vamos a necesitar hoy.", status: "visto" },
+            { emisor: "otro", hora: "09:00", id: 9, texto: "¿Otra aventura secreta?", status: "visto" },
+            { emisor: "yo", hora: "09:05", id: 10, texto: "Digamos que Snape no puede vernos esta vez.", status: "visto" },
+            { emisor: "otro", hora: "09:07", id: 11, texto: "¿Y Hermione lo sabe?", status: "visto" },
+            { emisor: "yo", hora: "09:08", id: 12, texto: "Mejor que no. Nos daría un sermón.", status: "visto" },
+            { emisor: "otro", hora: "09:10", id: 13, texto: "Entonces, ¿nos encontramos en la torre de astronomía?", status: "visto" },
+            { emisor: "yo", hora: "09:12", id: 14, texto: "Sí, pero llevá la Capa de Invisibilidad.", status: "visto" },
+            { emisor: "otro", hora: "09:15", id: 15, texto: "Hecho. Nos vemos allá.", status: "no-visto" }
         ]
     },
     {
@@ -56,49 +36,22 @@ const contacts = [
         last_message: "14:22",
         phone: "+54 11 4567-1234",
         messages: [
-            {
-                emisor: "otro",
-                hora: "13:01",
-                id: 1,
-                texto: "¿Terminaste el deber de Pociones?",
-                status: "visto"
-            },
-            {
-                emisor: "yo",
-                hora: "13:45",
-                id: 2,
-                texto: "Todavía no, pero me falta poco.",
-                status: "visto"
-            },
-            {
-                emisor: "otro",
-                hora: "14:00",
-                id: 3,
-                texto: "Asegúrate de revisar la página 394.",
-                status: "visto"
-            },
-            {
-                emisor: "otro",
-                hora: "14:01",
-                id: 4,
-                texto: "Y no olvides citar los ingredientes correctamente.",
-                status: "visto"
-            },
-            {
-                emisor: "yo",
-                hora: "14:10",
-                id: 5,
-                texto: "¡Gracias por el consejo!",
-                status: "visto"
-            },
-            {
-                emisor: "otro",
-                hora: "14:22",
-                id: 6,
-                texto: "¡No dudes en preguntarme si necesitas ayuda!",
-                status: "no-visto"
-            }
-        ]
+            { emisor: "otro", hora: "12:30", id: 1, texto: "¿Terminaste el deber de Pociones?", status: "visto" },
+            { emisor: "yo", hora: "12:35", id: 2, texto: "Sí, lo terminé anoche.", status: "visto" },
+            { emisor: "yo", hora: "12:36", id: 3, texto: "Usé referencias del libro de Snape.", status: "visto" },
+            { emisor: "otro", hora: "12:37", id: 4, texto: "¿La edición antigua?", status: "visto" },
+            { emisor: "yo", hora: "12:40", id: 5, texto: "Sí, tiene notas manuscritas muy interesantes.", status: "visto" },
+            { emisor: "otro", hora: "12:45", id: 6, texto: "¿Y Transfiguración?", status: "visto" },
+            { emisor: "yo", hora: "12:46", id: 7, texto: "Lo haré esta tarde, ya organicé mi tiempo.", status: "visto" },
+            { emisor: "otro", hora: "12:50", id: 8, texto: "Eres increíble, Hermione.", status: "visto" },
+            { emisor: "yo", hora: "12:51", id: 9, texto: "Gracias, pero todos pueden si se organizan.", status: "visto" },
+            { emisor: "otro", hora: "12:52", id: 10, texto: "¿Podrías ayudarme con Encantamientos?", status: "visto" },
+            { emisor: "yo", hora: "13:00", id: 11, texto: "Por supuesto. ¿A las 5 en la biblioteca?", status: "visto" },
+            { emisor: "otro", hora: "13:01", id: 12, texto: "Hecho. Llevo las plumas y pergaminos.", status: "visto" },
+            { emisor: "yo", hora: "13:10", id: 13, texto: "No olvides las varitas. Practicaremos Lumos.", status: "visto" },
+            { emisor: "otro", hora: "13:11", id: 14, texto: "¡Perfecto! Gracias.", status: "visto" },
+            { emisor: "yo", hora: "13:15", id: 15, texto: "Nos vemos a la tarde. No llegues tarde.", status: "no-visto" }
+        ]          
     },
     {
         id: 3,

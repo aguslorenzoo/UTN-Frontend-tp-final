@@ -1,7 +1,9 @@
 .chatscreen_container{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 .chat-header{
@@ -59,7 +61,8 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    position: relative;
+    overflow: hidden;
+    height: calc(100vh - 80px);
     background-image: url("/images/fondo_wpp.jpg");
     background-size: cover;
 } 
@@ -106,6 +109,20 @@
     padding: 2px;
 }
 
+.message-list-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.message-list-container::-webkit-scrollbar-track {
+    background: var(--background-color);
+    border: 2px solid transparent;  
+}
+
+.message-list-container::-webkit-scrollbar-thumb {
+    background-color: var(--background-color-400);
+    border-radius: 4px;
+    min-height: 20px;
+}
 
 
 @media screen and (min-width: 1500px){
